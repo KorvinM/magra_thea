@@ -1,0 +1,184 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'normalize';
+@import 'larawind';
+
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+.main-header{
+justify-content: space-between;
+align-items: center;
+width: 94%;
+margin: 0 auto;
+.navbar-brand{
+  font-size: 2.25rem;
+}
+}
+
+h1,h2,h4,h4,h5{
+	font-family: 'Raleway', sans-serif;
+
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	background: rgba(200,200,250,0.6);
+	bottom: 3px;
+	height: 3em;
+
+}
+footer div{
+	  justify-content: space-around;
+	width: 100%;
+	background: rgba(200,200,250,0.6);
+	}
+main{
+	background: url('/img/planet.jpg');
+	bakground-repeat: no-repeat;
+	background-size: cover;
+}
+
+header h2{
+	color: whitesmoke;
+	background: rgba(100,100,200,0.4);
+	padding:1em 1.4em;
+	border-radius: 50%;
+}
+ul{
+	margin: 1em;
+	padding: 0em;
+}
+nav ul{
+	flex-direction: column;
+	list-style:none;
+	padding: 0 2em;
+	justify-content: space-between
+}
+nav ul li{display: inline; padding: 0 1em;}
+
+
+div.grid section{
+	border: 1px ridge #616;
+}
+
+/* new utility classes */
+.min-h-screen62{min-height: 62vh;}
+.min-h-screen50{min-height: 50vh;}
+.max-h-screen62{max-height: 62vh;}
+.max-h-screen50{max-height: 50vh;}
+form{
+	padding: 1em;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+	border-radius: 3px;
+	margin: 0 0.6em;
+	padding: 12px
+}
+
+form > div > label, fieldset label{
+	width: 100%;
+	font-size: 1.1em;
+	margin-top: -2px;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=submit],
+textarea,
+select {
+  border: 2px solid #9a9c9a;
+  border-left: 2px solid #9ac99a;
+  border-right: 2px solid #9a9e9a;
+  border-bottom: 2px solid #9a9a9a;
+  border: 2px solid #9a9c9a;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=submit],
+select {
+  width: 100%;
+	margin: 0 auto;
+}
+select {
+  background: whitesmoke;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=submit]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+input[type=submit]{
+	padding: 1em;
+	border-radius: 12px;
+}
+
+.submit-wrap{
+	grid-column-start: 2;
+	grid-column-end: 3;}
+
+
+	.features-wrap{
+		grid-column-start: 1;
+		grid-column-end: 4;}
+
+	.features-wrap fieldset{
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+
+@media (min-width: 715px) {
+  form > div > label{
+	  width: 50%;
+    float: left;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+	select  {
+    width: 50%;
+  }
+	.features-wrap fieldset{
+		flex-direction: row;
+	}
+
+}
+
+@media (min-width: 1024px) {
+  form > div > label{
+  	text-align: center;
+  }
+	input{
+		margin-top: 1.25em;
+	}
+	input[type="checkbox"]{
+		margin-top: 0;
+		margin-right: 6px;
+	}
+}
+
+.planet-details>div>*{
+	padding: 0 2em;
+}
